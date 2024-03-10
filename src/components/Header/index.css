@@ -1,0 +1,19 @@
+.nav-items {
+  list-style-type: none;
+}
+.header-container {
+  background-color: #0c0b10;
+  opacity: 0.8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  color: #fff;
+}
+.nav-items li {
+  display: inline-block;
+  margin-left: 10px;
+}
+.header-part1 {
+  display: flex;
+}
