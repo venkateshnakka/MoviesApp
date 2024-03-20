@@ -47,3 +47,8 @@
 .login-form h2 {
   text-align: center;
 }
+.loginError {
+    text-align: center;
+    color: #e50914;
+    font-size: bold;
+}

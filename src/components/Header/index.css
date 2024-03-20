@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
+  padding: 10px 60px;
   color: #fff;
 }
 .nav-items li {
@@ -16,4 +16,10 @@
 }
 .header-part1 {
   display: flex;
+}
+.header-part2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
