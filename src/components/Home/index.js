@@ -1,24 +1,33 @@
-import React, {useEffect} from 'react'
+import React, {useState, useEffect} from 'react'
 import ReactDOM from 'react-dom'
 import Cookies from 'js-cookie'
+import TrendingMovies from '../TrendingMovies'
 
 const Home = () => {
+  const [trendingMovies, setTrendingMovies] = useState([])
   const getTrendingMovies = async () => {
     const token = Cookies.get('jwt_token')
     const options = {
       method: 'Get',
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
     }
     const response = await fetch(
       'https://apis.ccbp.in/movies-app/trending-movies',
       options,
     )
     const data = await response.json()
-    console.log(data)
+    setTrendingMovies(data.results)
   }
-  useEffect(getTrendingMovies())
+  useEffect(() => {
+    getTrendingMovies()
+  }, [])
   return (
     <div>
-      <h1>This is Home section</h1>
+      {trendingMovies.map(eachMovie => (
+        <TrendingMovies eachMovie={eachMovie} key={eachMovie.id} />
+      ))}
     </div>
   )
 }
