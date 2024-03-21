@@ -1,12 +1,7 @@
-import Home from './components/Home'
-import Login from './components/Login'
-import './App.css'
+// import Home from './components/Home'
+// import Login from './components/Login'
+// import './App.css'
 
-const App = () => (
-  <div>
-    {/* <Login /> */}
-    <Home />
-  </div>
-)
+// const App = () => <div></div>
 
-export default App
+// export default App

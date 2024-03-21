@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import './index.css'
 
 const Header = () => (
@@ -9,8 +10,12 @@ const Header = () => (
         className="movies-icon"
       />
       <ul className="nav-items">
-        <li>Home</li>
-        <li>Popular</li>
+        <Link to="/">
+          <li>Home</li>
+        </Link>
+        <Link to="/popular">
+          <li>Popular</li>
+        </Link>
       </ul>
     </div>
     <div className="header-part2">

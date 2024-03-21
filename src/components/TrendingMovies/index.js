@@ -61,7 +61,7 @@ class ReactSlick extends Component {
   render() {
     return (
       <div className="main-container">
-        <h1>Trending Now</h1>
+        <h3>Trending Now</h3>
         <div className="slick-container">{this.renderSlider()}</div>
       </div>
     )
