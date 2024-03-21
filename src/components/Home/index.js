@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import ReactDOM from 'react-dom'
 import Cookies from 'js-cookie'
-import TrendingMovies from '../TrendingMovies'
+import ReactSlick from '../TrendingMovies'
 
 const Home = () => {
   const [trendingMovies, setTrendingMovies] = useState([])
@@ -25,9 +25,10 @@ const Home = () => {
   }, [])
   return (
     <div>
-      {trendingMovies.map(eachMovie => (
+      {/* {trendingMovies.map(eachMovie => (
         <TrendingMovies eachMovie={eachMovie} key={eachMovie.id} />
-      ))}
+      ))} */}
+      <ReactSlick trendingMovies={trendingMovies} />
     </div>
   )
 }

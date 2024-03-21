@@ -4,7 +4,7 @@ import './App.css'
 
 const App = () => (
   <div>
-    <Login />
+    {/* <Login /> */}
     <Home />
   </div>
 )
