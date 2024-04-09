@@ -1,0 +1,35 @@
+.originals-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(24, 23, 23);
+  color: #fff;
+}
+
+.slick-container {
+  width: 80%;
+  max-width: 950px;
+  margin-top: 10px;
+}
+
+.logo-image {
+  margin: 0px 10px;
+  height: 130px;
+  width: 200px;
+  border-radius: 5px;
+}
+.slick-item img {
+  margin: auto;
+}
+
+/* You can change the CSS color to style the Next and 
+Previous Arrow buttons according to your project */
+
+.slick-prev:before,
+.slick-next:before {
+  color: #fff;
+}
+.heading {
+    text-align: start !important;
+}

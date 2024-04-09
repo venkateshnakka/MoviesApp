@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 import Slider from 'react-slick'
+import './index.css'
 // import 'slick-carousel/slick/slick.css'
 // import 'slick-carousel/slick/slick-theme.css'
 
 /* Add css to your project */
-import './index.css'
 
 const settings = {
   dots: false,
@@ -37,7 +37,7 @@ const settings = {
   ],
 }
 
-class TrendingMovies extends Component {
+class OriginalMovies extends Component {
   renderSlider = () => {
     const {trendingMovies} = this.props
     return (
@@ -60,12 +60,12 @@ class TrendingMovies extends Component {
 
   render() {
     return (
-      <div className="main-container">
-        <p>Trending Now</p>
+      <div className="originals-container">
+        <p className="heading">Originals</p>
         <div className="slick-container">{this.renderSlider()}</div>
       </div>
     )
   }
 }
 
-export default TrendingMovies
+export default OriginalMovies

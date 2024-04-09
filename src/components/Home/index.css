@@ -1,0 +1,11 @@
+.random-poster {
+  width: 100%;
+  height: 400px;
+}
+.random-poster img{
+  width: 100%;
+  height: 100%;
+}
+.home-container {
+  border: 2px solid red;
+}
