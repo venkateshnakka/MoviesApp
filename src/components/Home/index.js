@@ -50,14 +50,17 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="random-poster">
-        <img
-          src={randomMovie?.poster_path}
-          className="randomPoster"
-          alt={randomMovie?.title}
-        />
+        <img src={randomMovie?.backdrop_path} alt={randomMovie?.title} />
+        <div className="random-poster-details">
+          <h1>{randomMovie?.title}</h1>
+          <p>{randomMovie?.overview}</p>
+          <button>Play</button>
+        </div>
       </div>
+
       <TrendingMovies trendingMovies={trendingMovies} />
       <OriginalMovies trendingMovies={originalMovies} />
+      {console.log(randomMovie)}
     </div>
   )
 }

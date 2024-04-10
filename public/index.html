@@ -48,6 +48,12 @@
       console.log = (...args) =>
         args[0]?.includes?.('[HMR]') ? null : log(...args);
     </script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;        
+      }
+    </style>
   </head>
   <body style="margin: 0px">
     <div id="root"></div>

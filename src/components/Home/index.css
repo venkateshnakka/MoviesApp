@@ -1,11 +1,26 @@
 .random-poster {
   width: 100%;
+  overflow: hidden;
   height: 400px;
 }
-.random-poster img{
-  width: 100%;
+.random-poster img {
+  width: 100% !important;
   height: 100%;
+  object-fit: fill;
+}
+.random-poster-details {
+  position: absolute;
+  color: #fff;
+  top: 30%;
+  left: 10%;
+  width: 400px;
+}
+.random-poster-details button {
+  background-color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 .home-container {
-  border: 2px solid red;
 }

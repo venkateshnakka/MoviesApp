@@ -25,7 +25,8 @@ const Header = () => (
       />
       <img
         src="https://res.cloudinary.com/dssfsnedz/image/upload/v1710061557/Avataruser-icon_duq8s5.svg"
-        alt="search icon"
+        alt="Avatar icon"
+        className="avatar"
       />
     </div>
   </div>

@@ -1,25 +1,38 @@
-.nav-items {
-  list-style-type: none;
-}
 .header-container {
-  background-color: #0c0b10;
-  opacity: 0.8;
+  position: absolute;
+  background-color: rgb(73, 72, 72, 0.3);
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 60px;
+  padding: 20px 60px;
   color: #fff;
+}
+.nav-items {
+  list-style-type: none;
+}
+.nav-items li {
+  color: #fff;
+}
+.movies-icon {
+  height: 30px;
 }
 .nav-items li {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .header-part1 {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 .header-part2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.avatar {
+    height: 35px;
 }
