@@ -5,11 +5,14 @@ import Home from './components/Home'
 import Error from './components/Error'
 import Popular from './components/Popular'
 import Header from './components/Header'
+import Footer from './components/Footer'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const AppLayout = () => (
   <div>
     <Header />
     <Outlet />
+    <Footer />
   </div>
 )
 

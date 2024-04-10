@@ -1,0 +1,8 @@
+.popular-movie-poster {
+  width: 255px;
+  height: 170px;
+}
+.popular-movies-container {
+  background-color: rgb(24, 23, 23) !important;
+  padding-top: 130px;
+}
