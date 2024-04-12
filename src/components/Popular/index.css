@@ -6,3 +6,9 @@
   background-color: rgb(24, 23, 23) !important;
   padding-top: 130px;
 }
+.products-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

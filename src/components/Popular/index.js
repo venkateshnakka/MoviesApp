@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import Cookies from 'js-cookie'
-import {Bars} from 'react-loader-spinner'
+import Loader from 'react-loader-spinner'
 import './index.css'
 
 const Popular = () => {
@@ -29,7 +29,13 @@ const Popular = () => {
   useEffect(() => {
     getPopularMovies()
   }, [])
-
+  if (popularMovies.length === 0) {
+    return (
+      <div className="products-loader-container">
+        <Loader type="ThreeDots" color="#fff" height="50" width="50" />
+      </div>
+    )
+  }
   return (
     <div className="popular-movies-container">
       <div className="container">
