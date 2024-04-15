@@ -6,10 +6,11 @@ import Error from './components/Error'
 import Popular from './components/Popular'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import MovieDetails from './components/MovieDetails'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const AppLayout = () => (
-  <div>
+  <div>  
     <Header />
     <Outlet />
     <Footer />
@@ -28,6 +29,10 @@ const appRouter = createBrowserRouter([
       {
         path: '/popular',
         element: <Popular />,
+      },
+      {
+        path: '/popular/:id',
+        element: <MovieDetails />,
       },
     ],
   },

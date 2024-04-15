@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
+import {Link} from 'react-router-dom'
 import './index.css'
 
 const Popular = () => {
@@ -42,11 +43,13 @@ const Popular = () => {
         <div className="row">
           {popularMovies.map(eachMovie => (
             <div key={eachMovie.id} className="col-md-4 col-lg-3 mb-3">
-              <img
-                src={eachMovie?.poster_path}
-                className="popular-movie-poster rounded"
-                alt={eachMovie?.title}
-              />
+              <Link to={eachMovie?.id}>
+                <img
+                  src={eachMovie?.poster_path}
+                  className="popular-movie-poster rounded"
+                  alt={eachMovie?.title}
+                />
+              </Link>
             </div>
           ))}
         </div>
